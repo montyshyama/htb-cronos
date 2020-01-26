@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Tue Jan 21 07:07:43 2020 as: nmap -p- -oA nmap/full-port -&#45;max-retries=0 -vvv 10.10.10.13 -->
+<nmaprun scanner="nmap" args="nmap -p- -oA nmap/full-port -&#45;max-retries=0 -vvv 10.10.10.13" start="1579570663" startstr="Tue Jan 21 07:07:43 2020" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1579570663"/>
+<taskend task="Ping Scan" time="1579570664" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1579570664"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1579570664"/>
+<taskbegin task="SYN Stealth Scan" time="1579570664"/>
+<taskprogress task="SYN Stealth Scan" time="1579570695" percent="6.06" remaining="481" etc="1579571175"/>
+<taskprogress task="SYN Stealth Scan" time="1579570725" percent="20.00" remaining="244" etc="1579570969"/>
+<taskprogress task="SYN Stealth Scan" time="1579570755" percent="39.17" remaining="142" etc="1579570896"/>
+<taskprogress task="SYN Stealth Scan" time="1579570785" percent="58.88" remaining="85" etc="1579570870"/>
+<taskprogress task="SYN Stealth Scan" time="1579570815" percent="75.72" remaining="49" etc="1579570863"/>
+<taskend task="SYN Stealth Scan" time="1579570848" extrainfo="65535 total ports"/>
+<host starttime="1579570663" endtime="1579570848"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.13" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="273388" rttvar="11741" to="320352"/>
+</host>
+<runstats><finished time="1579570848" timestr="Tue Jan 21 07:10:48 2020" elapsed="185.15" summary="Nmap done at Tue Jan 21 07:10:48 2020; 1 IP address (1 host up) scanned in 185.15 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
